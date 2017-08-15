@@ -57,13 +57,14 @@ public class JedisTest {
     public void TestPublish(){
         //使用jedis发布消息
         jedis.publish("ch1","this is a testMessage");
+
         //jedis取消订阅频道,只能通过jedisPuBSub类来取消.
 
-        jedis.getClient().unsubscribe();//取消所有订阅,client和jedis功能基本一致,jedis没有取消的方法
+        //jedis.getClient().unsubscribe();//取消所有订阅,client和jedis功能基本一致,jedis没有取消的方法
         //subscribe.unsubscribe();取消订阅底层也就是调用的client里面的这个方法
     }
 
-   // @After
+   @After
     public void ColeResource() {
         jedis.close();
     }
