@@ -11,7 +11,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="learn_parent" target="1.5" />
-      <module name="learn_redis" target="1.5" />
+      <module name="learn_redis" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
