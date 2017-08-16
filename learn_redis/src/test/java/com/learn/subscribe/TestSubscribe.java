@@ -16,6 +16,11 @@ public class TestSubscribe extends JedisPubSub {
      */
     @Override
     public void onMessage(String channel, String message) {
+        //如果发送指定的消息,取消所有订阅
+        if (message.equals("取消所有订阅")) {
+            this.unsubscribe();
+            return;
+        }
         System.out.println(channel+"=========="+message);
     }
 
@@ -39,6 +44,7 @@ public class TestSubscribe extends JedisPubSub {
     public void onPSubscribe(String pattern, int subscribedChannels) {
         super.onPSubscribe(pattern, subscribedChannels);
     }
+
 
     /**
      * 取消按表达式的方式订阅的后的处理方法
@@ -69,5 +75,6 @@ public class TestSubscribe extends JedisPubSub {
     public void onUnsubscribe(String channel, int subscribedChannels) {
         System.out.println("取消消息订阅:"+channel+"  "+subscribedChannels);
     }
+
 
 }

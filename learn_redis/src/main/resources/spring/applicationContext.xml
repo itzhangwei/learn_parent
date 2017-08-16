@@ -10,8 +10,11 @@
         http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.0.xsd
 	    http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd">
 
+    <!--jedis-->
     <bean name="jedis" class="redis.clients.jedis.Jedis" >
         <constructor-arg name="host" value="127.0.0.1"></constructor-arg>
         <constructor-arg name="port" value="6379"></constructor-arg>
     </bean>
+    <!--自定义类继承JedisPubSub-->
+    <bean name="testSubscribe" class="com.learn.subscribe.TestSubscribe" scope="singleton"></bean>
 </beans>
