@@ -1,4 +1,4 @@
-package com.learn.queue.demo1;
+package com.learn_jpa.queue.demo1;
 
 import java.io.Serializable;
 

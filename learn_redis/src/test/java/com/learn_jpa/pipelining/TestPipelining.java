@@ -1,4 +1,4 @@
-package com.learn.pipelining;
+package com.learn_jpa.pipelining;
 
 import org.junit.Test;
 import redis.clients.jedis.Jedis;

@@ -1,4 +1,4 @@
-package com.learn.myevent;
+package com.learn_jpa.myevent;
 
 import java.util.EventObject;
 

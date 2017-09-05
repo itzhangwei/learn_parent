@@ -1,11 +1,10 @@
-package com.learn;
+package com.learn_jpa;
 
-import com.learn.subscribe.TestSubscribe;
+import com.learn_jpa.subscribe.TestSubscribe;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import redis.clients.jedis.Client;
 import redis.clients.jedis.Jedis;
 
 

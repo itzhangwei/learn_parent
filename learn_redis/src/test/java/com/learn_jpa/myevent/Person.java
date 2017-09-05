@@ -1,4 +1,4 @@
-package com.learn.myevent;
+package com.learn_jpa.myevent;
 
 /**
  * 事件源,事件源里面包含事件的监听对象,在事件源的指定要监听的方法发生改变的时候去调用事件监听器里面的方法.

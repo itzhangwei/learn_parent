@@ -1,4 +1,4 @@
-package com.learn.queue;
+package com.learn_jpa.queue;
 
 import org.junit.Test;
 import redis.clients.jedis.Jedis;

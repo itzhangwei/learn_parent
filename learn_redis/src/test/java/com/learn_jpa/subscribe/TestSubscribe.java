@@ -1,4 +1,4 @@
-package com.learn.subscribe;
+package com.learn_jpa.subscribe;
 
 
 import redis.clients.jedis.JedisPubSub;

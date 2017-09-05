@@ -1,4 +1,4 @@
-package com.learn.demo;
+package com.learn_jpa.demo;
 
 import org.junit.Test;
 import redis.clients.jedis.Jedis;
