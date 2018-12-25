@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>learn_parent</artifactId>
+        <groupId>com.learn</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>learn_easyopen</artifactId>
+    <name>learn_easyOpen</name>
+    <description>easyOpen api项目，相当于整个项目的web入口</description>
+
+
+    <dependencies>
+
+
+        <!--dao依赖-->
+        <dependency>
+            <groupId>com.learn</groupId>
+            <artifactId>learn_db_mybatis_plus</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+
+        <!-- easyOpen依赖-->
+        <dependency>
+            <groupId>net.oschina.durcframework</groupId>
+            <artifactId>easyopen-spring-boot-starter</artifactId>
+            <version>${esasyopen.version}</version>
+        </dependency>
+   </dependencies>
+</project>
