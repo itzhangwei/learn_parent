@@ -1,7 +1,7 @@
 package com.learn.mapper.sys;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.learn.entity.SysUserEntity;
+import com.learn.entity.SysUser;
 import org.springframework.stereotype.Repository;
 
 /**
@@ -14,6 +14,6 @@ import org.springframework.stereotype.Repository;
  * @date 2018/12/25 16:05
  */
 @Repository
-public interface SysUserMapper extends BaseMapper<SysUserEntity> {
+public interface SysUserMapper extends BaseMapper<SysUser> {
 
 }
