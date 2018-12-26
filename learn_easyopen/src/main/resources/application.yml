@@ -1,17 +1,12 @@
 server:
   port: 8888
 spring:
+  profiles:
+    active: db
   application:
     name: learn_project
-
-  datasource:
-    type: com.alibaba.druid.pool.DruidDataSource
-    driver-class-name: com.mysql.jdbc.Driver
-    url: jbdc:mysql://localhost:3306/jeeplateform?serverTimezone=Asia/Shanghai?useUnicode=true&characterEncoding=utf-8
-    username: root
-    password: ENC(2TgNxhuTBazVWRIB2qmmFoSimggK6SVx)
-
-# https://github.com/ulisesbocchio/jasypt-spring-boot
-jasypt:
-  encryptor:
-    password: I'm very handsome
+easyopen:
+  app-name: learn_easyOpen
+  show-doc: true #设置api文档是否显示
+  ignore-validate: true #设置忽略请求验证
+  mono: true
