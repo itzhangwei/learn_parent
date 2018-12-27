@@ -17,7 +17,8 @@ public class JasyptTest {
         BasicTextEncryptor basicTextEncryptor = new BasicTextEncryptor();
         //加密所需要的盐
         basicTextEncryptor.setPassword("I'm very handsome");
-        String zhangwei = basicTextEncryptor.encrypt("zhangwei");
+        //String zhangwei = basicTextEncryptor.encrypt("zhangwei");
+        String zhangwei = basicTextEncryptor.encrypt("joker");
         System.out.println(zhangwei);
     }
 }
