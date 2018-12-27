@@ -8,5 +8,9 @@ spring:
 easyopen:
   app-name: learn_easyOpen
   show-doc: true #设置api文档是否显示
-  ignore-validate: true #设置忽略请求验证
+  #ignore-validate: true #设置忽略请求验证
   mono: true
+  doc-password: ENC(8B5qSFUPj6vB+lfFDLKjJg==)
+  app-secret:
+    learn: learn_easyOpen #是map类型
+  timeout-seconds: 5
