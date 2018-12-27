@@ -1,4 +1,4 @@
-package com.learn.easy.open.sys;
+package com.learn.easy.open.business.sys;
 
 import com.baomidou.mybatisplus.core.conditions.query.EmptyWrapper;
 import com.gitee.easyopen.annotation.Api;
