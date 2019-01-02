@@ -3,6 +3,8 @@ package com.learn.easy.open.business.sys;
 import com.baomidou.mybatisplus.core.conditions.query.EmptyWrapper;
 import com.gitee.easyopen.annotation.Api;
 import com.gitee.easyopen.annotation.ApiService;
+import com.gitee.easyopen.doc.DataType;
+import com.gitee.easyopen.doc.annotation.ApiDocField;
 import com.gitee.easyopen.doc.annotation.ApiDocMethod;
 import com.learn.entity.SysUser;
 import com.learn.mapper.sys.SysUserMapper;
@@ -35,5 +37,14 @@ public class SysUerApi {
     @ApiDocMethod(description = "获取用户列表")
     public List<SysUser> findUserList(){
         return userMapper.selectList(new EmptyWrapper<>());
+    }
+
+    @Api(name="findUserById")
+    @ApiDocMethod(description = "根据Id查询用户", params = {
+            @ApiDocField(name = "id",required = true,dataType = DataType.STRING,example = "1")
+    }
+    )
+    public SysUser findUserById(String id){
+        return userMapper.selectById(id);
     }
 }

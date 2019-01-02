@@ -1,6 +1,8 @@
 package com.learn;
 
 import com.gitee.easyopen.ApiConfig;
+import com.gitee.easyopen.interceptor.ApiInterceptor;
+import com.learn.easy.open.config.interceptor.LogInterceptor;
 import com.learn.easy.open.config.result.MyResultCreator;
 import com.ulisesbocchio.jasyptspringboot.annotation.EnableEncryptableProperties;
 import org.mybatis.spring.annotation.MapperScan;
@@ -53,5 +55,9 @@ public class DriverLearnEasy {
         //使用自定义返回类
         apiConfig.setResultCreator(new MyResultCreator());
 
+        //使用拦截器
+        apiConfig.setInterceptors(
+                new ApiInterceptor[]{new LogInterceptor()}
+        );
     }
 }

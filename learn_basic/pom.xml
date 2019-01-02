@@ -12,7 +12,10 @@
     <artifactId>learn_basic</artifactId>
     <name>learn_basic</name>
     <description>项目的基础依赖</description>
-    <packaging>jar</packaging>
+    <modules>
+        <module>../learn_cache</module>
+    </modules>
+    <packaging>pom</packaging>
 
     <dependencies>
         <dependency>
