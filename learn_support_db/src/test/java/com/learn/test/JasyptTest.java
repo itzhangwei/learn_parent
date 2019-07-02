@@ -10,7 +10,6 @@ import org.jasypt.util.text.BasicTextEncryptor;
  * @package com.learn.test
  * @description 加密测试类
  * @date 2018/12/25 13:26
- * @copyright: 2018 北京君致速达科技有限公司
  */
 public class JasyptTest {
     public static void main(String[] args) {
